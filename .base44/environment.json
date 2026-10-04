@@ -1,0 +1,17 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/health",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "OFW_USERNAME",
+      "description": "YourFamilyWizard login email. Optional — the server has a fetchproxy browser-extension fallback when omitted.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "OFW_PASSWORD",
+      "description": "YourFamilyWizard password. Optional — see OFW_USERNAME.",
+      "requiredAtBoot": false
+    }
+  ]
+}
